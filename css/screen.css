@@ -43,7 +43,7 @@ header div.hero h1 { line-height: 1em; margin: 0 0 30px 0; color: #fff; }
 /* Section - All */
 
 section { padding: 0 30px; }
-section::after { content:''; display: block; clear: both; }
+section::after { content: ''; display: block; clear: both; }
 
 
 /* Section - Main */
@@ -122,7 +122,7 @@ nav {
     width: 100%;
 }
 
-nav::after { content:''; display: block; clear: both; }
+nav::after { content: ''; display: block; clear: both; }
 
 nav ul { list-style: none; margin: 0; padding: 0; }
 
@@ -134,7 +134,7 @@ nav ul li a {
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
-    width: 90px;
+    width: 110px;
     position: relative;
 }
 
@@ -154,6 +154,24 @@ nav ul ul ul { left: 100%; top: 0; }
 nav > ul { padding-left: 200px; }
 nav > ul > li { float: left; }
 nav > ul > li > a { width: auto; padding: 10px 20px 15px 20px; }
+
+nav a[aria-haspopup="true"]::after {
+    content: '';
+    display: block; width: 0; height: 0;
+    position: absolute;
+    top: 16px; right: 15px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #fff;
+}
+
+nav > ul > li > a[aria-haspopup="true"]::after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+    left: 20px; right: auto;
+    bottom: 6px; top: auto;
+}
 
 
 /* Footer */
