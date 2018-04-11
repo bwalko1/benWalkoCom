@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Mina:400,700');
+
+h1.title {
+    font-family: 'Mina', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+form {
+    margin: 0 auto;
+    width: 459px;
+}
+
+input, textarea {
+    width: 439px;
+    height: 27px;
+    background-color: #cbcbcb;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #444444;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 0.9em;
+    color: #000000;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #444444;
+}
+
+textarea {
+    height: 213px;
+    background-color: #cbcbcb;
+}
+
+#submit {
+    width: 127px;
+    height: 48px;
+    text-align: center;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    color: #12d484;
+    background-color: #555555;
+    opacity: 0.9;
+}
+
+#cancel {
+    width: 127px;
+    height: 48px;
+    text-align: center;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#cancel:hover {
+    color: #12d484;
+    background-color: #444444;
+    opacity: 0.9;
+}

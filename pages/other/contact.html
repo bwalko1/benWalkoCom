@@ -12,21 +12,31 @@
 <body>
 <div id="page">
     
-    <header>
+    <header class="head">
         <a class="logo" title="Ben Walko" href="../../index.html"><span>Ben Walko</span></a>
-        <h1 class="name">Skills</h1>
+        <h1 class="name">Contact</h1>
     </header>
     
-    <section class="main">
-    
-    </section>
-    
     <section class="atmosphere">
+        <link type="text/css" rel="stylesheet" href="../../css/contact.css">
+        <section class="body">
+            
+            <form action="../../php/form.php" method="post" enctype="multipart/form-data">
+                
+                <label></label>
+                <input name="name" required="required" placeholder="Your Name">
+                
+                <label></label>
+                <input name="email" type="email" required="required" placeholder="Your Email">
+                
+                <label></label>
+                <textarea name="message" cols="20" rows="5" required="required" placeholder="Message"></textarea>
     
-    </section>
-    
-    <section class="how-to">
-    
+                <input id="submit" name="submit" type="submit" value="Submit">
+                <input id="cancel" name="cancel" type="reset" value="Cancel"/>
+            </form>
+            
+        </section>
     </section>
     
     <nav>
@@ -35,10 +45,10 @@
                 <a title="About Me" href="#" aria-haspopup="true">About Me</a>
                 <ul>
                     <li>
-                        <a title="Who I am" href="bio.html">Who I am</a>
+                        <a title="Who I am" href="../about/bio.html">Who I am</a>
                     </li>
                     <li>
-                        <a title="Skills" href="../../pages/about/skills.html">Skills</a>
+                        <a title="Skills" href="../about/skills.html">Skills</a>
                     </li>
                 </ul>
             </li>
@@ -96,13 +106,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a title="/tmp\" href="#">/tmp\</a>
-                    </li>
                 </ul>
             </li>
             <li>
-                <a title="Contact Me" href="#">Contact Me</a>
+                <a title="Contact Me" href="../other/contact.html">Contact Me</a>
             </li>
         </ul>
     </nav>
@@ -110,8 +117,8 @@
     <footer>
         &copy; Benjamin Walko
         <div class="content">
-            <a title="Privacy Policy" href="../other/privacy.html">Privacy Policy</a>
-            <a title="Terms of Service" href="../other/terms.html">Terms of Service</a>
+            <a title="Privacy Policy" href="privacy.html">Privacy Policy</a>
+            <a title="Terms of Service" href="terms.html">Terms of Service</a>
         </div>
     </footer>
 
