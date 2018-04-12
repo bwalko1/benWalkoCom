@@ -21,7 +21,7 @@
         <link type="text/css" rel="stylesheet" href="../../css/contact.css">
         <section class="body">
             
-            <form method="post" enctype="multipart/form-data">
+            <form action="../../php/form.php" method="post" enctype="multipart/form-data">
                 <label></label>
                 <input name="name" required="required" placeholder="Your Name">
                 
@@ -31,7 +31,7 @@
                 <label></label>
                 <textarea name="message" cols="20" rows="5" required="required" placeholder="Message"></textarea>
     
-                <input id="submit" name="submit" type="submit" value="Submit">
+                <input id="submit" name="submit" type="reset" value="Submit">
                 <input id="cancel" name="cancel" type="reset" value="Cancel"/>
             </form>
             
@@ -108,7 +108,7 @@
                 </ul>
             </li>
             <li>
-                <a title="Contact Me" href="other/contact.html">Contact Me</a>
+                <a title="Contact Me" href="../other/contact.html">Contact Me</a>
             </li>
         </ul>
     </nav>
