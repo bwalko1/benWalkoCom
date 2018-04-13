@@ -9,26 +9,38 @@
     <title>Ben Walko's Website</title>
 </head>
 
-<body>
+<body class="animate-in">
+<script>
+    window.addEventListener("beforeunload", function () {
+        document.body.classList.add("animate-out");
+    });
+</script>
 <div id="page">
-    
-    <header>
+
+    <header class="head">
         <a class="logo" title="Ben Walko" href="../../../index.html"><span>Ben Walko</span></a>
-        <h1 class="name">Speedcubing</h1>
     </header>
-    
-    <section class="main">
-    
-    </section>
-    
+
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/Sz67ipXnKNg" frameborder="0" allowfullscreen></iframe>
+    </div>
+
     <section class="atmosphere">
-    
+        <div>
+            <img class="eagle_required" src="../../../images/feliks.jpg">
+            <h2>Speedcubing</h2>
+            <p> Speedcubing (also known as speedsolving) is the sport involving solving a variety of twisty puzzles, the
+                most famous being the Rubik's Cube, as quickly as possible. For most puzzles, solving entails performing
+                a series of moves that alters a scrambled puzzle into a state in which every face of the puzzle is a
+                single, solid color. Some puzzles have different requirements to be considered solved, such as the
+                Clock, for which all the dials must be moved into the 12 'o clock position.
+            </p>
+            <p> Felix Zemdegs (pictured left) currently holds 6 world records for speed solving and is renowned as one
+                of the best speedsolvers of this era.
+            </p>
+        </div>
     </section>
-    
-    <section class="how-to">
-    
-    </section>
-    
+
     <nav>
         <ul>
             <li>
@@ -42,7 +54,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Interests &amp; Hobbies" href="#" aria-haspopup="true">Interests &amp; Hobbies</a>
                 <ul>
@@ -79,7 +91,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Accomplishments" href="#" aria-haspopup="true">Accomplishments</a>
                 <ul>
@@ -106,7 +118,7 @@
             </li>
         </ul>
     </nav>
-    
+
     <footer>
         &copy; Benjamin Walko
         <div class="content">

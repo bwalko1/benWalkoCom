@@ -9,26 +9,31 @@
     <title>Ben Walko's Website</title>
 </head>
 
-<body>
+<body class="animate-in">
+<script>
+    window.addEventListener("beforeunload", function () {
+        document.body.classList.add("animate-out");
+    });
+</script>
 <div id="page">
-    
-    <header>
+
+    <header class="head">
         <a class="logo" title="Ben Walko" href="../../../index.html"><span>Ben Walko</span></a>
-        <h1 class="name">Eagle Overview</h1>
     </header>
-    
-    <section class="main">
-    
-    </section>
-    
+
     <section class="atmosphere">
-    
+        <div>
+            <img class="eagle_required" src="../../../images/Eagle_Req_All.png">
+            <img class="eagle_badges" src="../../../images/eagle_badges.png">
+            <h2>How do you become an Eagle Scout?</h2>
+            <p>The rank of Eagle Scout may be earned by a Boy Scout who has been a Life Scout for at least six months,
+                has earned a minimum of 21 merit badges, has demonstrated Scout Spirit, and has demonstrated leadership
+                within his troop, team, crew or ship. Additionally he must plan, develop, and lead a service
+                project—the Eagle Project—that demonstrates both leadership and a commitment to duty. After all
+                requirements are met, he must complete an Eagle Scout board of review.</p>
+        </div>
     </section>
-    
-    <section class="how-to">
-    
-    </section>
-    
+
     <nav>
         <ul>
             <li>
@@ -42,7 +47,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Interests &amp; Hobbies" href="#" aria-haspopup="true">Interests &amp; Hobbies</a>
                 <ul>
@@ -79,7 +84,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Accomplishments" href="#" aria-haspopup="true">Accomplishments</a>
                 <ul>
@@ -106,7 +111,7 @@
             </li>
         </ul>
     </nav>
-    
+
     <footer>
         &copy; Benjamin Walko
         <div class="content">

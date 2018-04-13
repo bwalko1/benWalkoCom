@@ -9,26 +9,65 @@
     <title>Ben Walko's Website</title>
 </head>
 
-<body>
+<body class="animate-in">
+<script>
+    window.addEventListener("beforeunload", function () {
+        document.body.classList.add("animate-out");
+    });
+</script>
 <div id="page">
-    
-    <header>
+
+    <header class="head">
         <a class="logo" title="Ben Walko" href="../../index.html"><span>Ben Walko</span></a>
-        <h1 class="name">Skills</h1>
     </header>
-    
-    <section class="main">
-    
+
+    <section class="list">
+        <h1>My Skills</h1>
+        <div class="column">
+            <h2>Personal</h2>
+            <ul>
+                <li>
+                    Leader
+                    <ul>
+                        Became an Eagle Scout in 2012
+                    </ul>
+                </li>
+                <li>
+                    Adaptive and rapid learner
+                </li>
+                <li>
+                    Progressive problem solving skills
+                </li>
+                <li>
+                    Excellent people skils
+                </li>
+            </ul>
+        </div>
+        <div class="column">
+            <h2>Coding</h2>
+            <ul>
+                <li>
+                    C#
+                </li>
+                <li>
+                    Ruby
+                </li>
+                <li>
+                    SQL
+                </li>
+                <li>
+                    HTML5
+                </li>
+                <li>
+                    CSS
+                </li>
+                <li>
+                    Java
+                </li>
+            </ul>
+        </div>
     </section>
-    
-    <section class="atmosphere">
-    
-    </section>
-    
-    <section class="how-to">
-    
-    </section>
-    
+
     <nav>
         <ul>
             <li>
@@ -42,7 +81,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Interests &amp; Hobbies" href="#" aria-haspopup="true">Interests &amp; Hobbies</a>
                 <ul>
@@ -78,7 +117,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Accomplishments" href="#" aria-haspopup="true">Accomplishments</a>
                 <ul>
@@ -103,7 +142,7 @@
             </li>
         </ul>
     </nav>
-    
+
     <footer>
         &copy; Benjamin Walko
         <div class="content">

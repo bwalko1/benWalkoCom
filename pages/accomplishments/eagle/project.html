@@ -9,26 +9,32 @@
     <title>Ben Walko's Website</title>
 </head>
 
-<body>
+<body class="animate-in">
+<script>
+    window.addEventListener("beforeunload", function () {
+        document.body.classList.add("animate-out");
+    });
+</script>
 <div id="page">
-    
-    <header>
+
+    <header class="head">
         <a class="logo" title="Ben Walko" href="../../../index.html"><span>Ben Walko</span></a>
-        <h1 class="name">Eagle Project</h1>
     </header>
-    
-    <section class="main">
-    
-    </section>
-    
+
     <section class="atmosphere">
-    
+        <div>
+            <img class="trap" src="../../../images/trap.jpg">
+            <h2>Eagle Scout Project</h2>
+            <p>The Eagle Scout Service Project, or simply Eagle Project, is the opportunity for a Boy Scout, Varsity
+                Scout, or qualified Venturer in the Boy Scouts of America (BSA) to demonstrate leadership of others
+                while performing a project for the benefit of his community.</p>
+            <p>My Eagle Scout project was to build three humane, foldable cat traps for my local cat rescue non-profit
+                organization. The traps will help lower the population of local cats by spaying/neutering trapped cats,
+                or giving cats forever homes by adopting them out. The drop traps look nearly identical to the one
+                pictured, but I did not take that picture myself.</p>
+        </div>
     </section>
-    
-    <section class="how-to">
-    
-    </section>
-    
+
     <nav>
         <ul>
             <li>
@@ -42,7 +48,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Interests &amp; Hobbies" href="#" aria-haspopup="true">Interests &amp; Hobbies</a>
                 <ul>
@@ -79,7 +85,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Accomplishments" href="#" aria-haspopup="true">Accomplishments</a>
                 <ul>
@@ -106,7 +112,7 @@
             </li>
         </ul>
     </nav>
-    
+
     <footer>
         &copy; Benjamin Walko
         <div class="content">

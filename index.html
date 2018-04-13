@@ -9,74 +9,64 @@
     <title>Ben Walko's Website</title>
 </head>
 
-<body>
-<div id="page">
-    
+
+<body class="animate-in">
+<script>
+    window.addEventListener("beforeunload", function () {
+        document.body.classList.add("animate-out");
+    });
+</script>
+<div>
+
     <header>
         <a class="logo" title="Ben Walko" href="index.html"><span>Ben Walko</span></a>
-        <h1 class="name">Home</h1>
         <div class="hero">
             <h1>Welcome to Ben's Website</h1>
-            <a class="btn" title="What I am currently working on" href="#">What I am currently working on</a>
+            <a class="btn" title="Click here for more information!" href="pages/about/bio.html">Find out who I am!</a>
         </div>
     </header>
-    
+
     <section class="main">
         <aside>
             <div class="content doing">
-                <h3><a href="#">What&apos;s Ben doing</a></h3>
-                <p>Ben is doing things with this paragraph to temporarily make it longer so it provides an example</p>
+                <h3><a title="Click here for more on my Rubik's Cubes!" href="pages/hobbies/cube/overview.html">Rubik&apos;s
+                    Cubes</a></h3>
+                <p>I have always enjoyed playing with Rubik's cubes ever since Sophomore year of High School. I also
+                    have a decently sized Rubik's cube collection.</p>
             </div>
         </aside>
-        
+
         <aside>
             <div class="content thinking">
-                <h3><a href="#">What&apos;s Ben thinking</a></h3>
-                <p>Ben is thinking about doing things with this paragraph to temporarily make it longer so it provides
-                    an example</p>
+                <h3><a title="Click here for more on League of Legends!" href="pages/hobbies/game/league.html">League of
+                    Legends</a></h3>
+                <p>League of Legends is currently my most played video game with over 2,000 hours played and
+                    counting.</p>
             </div>
         </aside>
-        
+
         <aside>
             <div class="content what">
-                <h3><a href="#">What is Ben</a></h3>
-                <p>Ben is</p>
+                <h3><a title="Click here for more on my Eagle Scout!" href="pages/accomplishments/eagle/overview.html">Eagle
+                    Scout</a></h3>
+                <p>Became an Eagle Scout in 2012 after 5 years in Boy Scouts and demonstrating outstanding
+                    leadership.</p>
             </div>
         </aside>
     </section>
-    
+
     <section class="atmosphere">
         <article>
             <h2>Creating applications, one line of code at a time</h2>
-            <p>Here is some text to describe what I'm doing</p>
-            <a class="btn" title="Creating applications, one line of code at a time" href="#">Learn more</a>
+            <p>I am currently employed with MRI Software. MRI was founded in 1971 and has always had the mission of
+                building flexible, game-changing solutions. MRI is one of the leading real estate software providers in
+                the world. With over 1400 employees worldwide, MRI has offices in the United States, Canada, Australia,
+                Hong Kong, Singapore, South Africa, and the United Kingdom to just name a few locations.</p>
+            <a class="btn" title="Click here to learn more about MRI Software!"
+               onclick="window.open('http://mrisoftware.com','_blank')">Learn more about MRI Software</a>
         </article>
     </section>
-    
-    <section class="how-to">
-        <aside>
-            <div class="content">
-                <img alt="Description of image" src="images/BigInt1.png">
-                <h4>Coding</h4>
-                <p>Feats of code being demonstrated</p>
-                <a title="Code Ben has done" href="#">Learn more</a>
-            </div>
-        </aside>
-        <aside>
-            <div class="content">
-                <img alt="Description of image" src="images/String1.png">
-                <h4>Accomplishments</h4>
-                <p>Personal achievements of Ben Walko</p>
-                <a title="Achievements of Ben Walko" href="#">Learn more</a>
-            </div>
-        </aside>
-        <blockquote>
-            <p class="quote">Intelligence is the ability to adapt to change.</p>
-            <p class="credit"><strong>Stephen Hawking</strong><br><em>Theoretical Physicist</em><br>Cambridge University
-            </p>
-        </blockquote>
-    </section>
-    
+
     <nav>
         <ul>
             <li>
@@ -90,7 +80,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Interests &amp; Hobbies" href="#" aria-haspopup="true">Interests &amp; Hobbies</a>
                 <ul>
@@ -124,7 +114,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Accomplishments" href="#" aria-haspopup="true">Accomplishments</a>
                 <ul>
@@ -149,7 +139,7 @@
             </li>
         </ul>
     </nav>
-    
+
     <footer>
         &copy; Benjamin Walko
         <div class="content">

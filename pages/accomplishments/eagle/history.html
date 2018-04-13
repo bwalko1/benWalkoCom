@@ -9,26 +9,32 @@
     <title>Ben Walko's Website</title>
 </head>
 
-<body>
+<body class="animate-in">
+<script>
+    window.addEventListener("beforeunload", function () {
+        document.body.classList.add("animate-out");
+    });
+</script>
 <div id="page">
-    
-    <header>
+
+    <header class="head">
         <a class="logo" title="Ben Walko" href="../../../index.html"><span>Ben Walko</span></a>
-        <h1 class="name">Eagle History</h1>
     </header>
-    
-    <section class="main">
-    
-    </section>
-    
+
     <section class="atmosphere">
-    
+        <div>
+            <img class="eagle" src="../../../images/eagle_icon.png">
+            <h2>What is an Eagle Scout?</h2>
+            <p>The Boy Scouts of America's (BSA) highest award was originally conceived as the Wolf Scout, described in
+                the June 1911 Official Handbook for Boys. The August 1911 version of the handbook changed this to
+                Eagle Scout. The medal illustrated in the handbook was a profile of an eagle in flight, but was changed
+                to the current design before any were issued. In their original conceptions, Life Scout, Star Scout
+                (Life preceded Star until 1924) and Eagle Scout were not ranks, but part of the merit badge system that
+                recognized Scouts who had earned a specified number of merit badges. Eagle Scout was awarded to any
+                First Class Scout who had earned 21 merit badges.</p>
+        </div>
     </section>
-    
-    <section class="how-to">
-    
-    </section>
-    
+
     <nav>
         <ul>
             <li>
@@ -42,7 +48,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Interests &amp; Hobbies" href="#" aria-haspopup="true">Interests &amp; Hobbies</a>
                 <ul>
@@ -79,7 +85,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Accomplishments" href="#" aria-haspopup="true">Accomplishments</a>
                 <ul>
@@ -106,7 +112,7 @@
             </li>
         </ul>
     </nav>
-    
+
     <footer>
         &copy; Benjamin Walko
         <div class="content">

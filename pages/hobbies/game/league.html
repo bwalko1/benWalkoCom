@@ -9,27 +9,34 @@
     <title>Ben Walko's Website</title>
 </head>
 
-<body>
+<body class="animate-in">
+<script>
+    window.addEventListener("beforeunload", function () {
+        document.body.classList.add("animate-out");
+    });
+</script>
 <div id="page">
-    
+
     <header class="head">
         <a class="logo" title="Ben Walko" href="../../../index.html"><span>Ben Walko</span></a>
-        <h1 class="name">League</h1>
     </header>
-    
+
     <div class="video">
         <iframe src="https://www.youtube.com/embed/3Eu7NzzHC84" frameborder="0" allowfullscreen></iframe>
     </div>
-    
-    <section class="atmosphere">
+
+    <section class="list">
         <article>
-            <h2>Who is Ben Walko?</h2>
-            <p>Hi! I am a Software Engineer that has a passion for working on enterprise level applications. I work for
-                a company called MRI Software. I have a passion for video games and Rubik's cubes and became an Eagle
-                Scout in 2012. </p>
+            <h2>What is League of Legends?</h2>
+            <p>League of Legends (abbreviated LoL) is a multiplayer online battle arena video game developed and
+                published by Riot Games for Microsoft Windows and macOS. The game follows a freemium model and is
+                supported by microtransactions, and was inspired by the Warcraft III: The Frozen Throne mod, Defense of
+                the Ancients. In League of Legends, players assume the role of an unseen "summoner" that controls a
+                "champion" with unique abilities and battle against a team of other players or computer-controlled
+                champions.</p>
         </article>
     </section>
-    
+
     <nav>
         <ul>
             <li>
@@ -43,7 +50,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Interests &amp; Hobbies" href="#" aria-haspopup="true">Interests &amp; Hobbies</a>
                 <ul>
@@ -80,7 +87,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Accomplishments" href="#" aria-haspopup="true">Accomplishments</a>
                 <ul>
@@ -107,7 +114,7 @@
             </li>
         </ul>
     </nav>
-    
+
     <footer>
         &copy; Benjamin Walko
         <div class="content">

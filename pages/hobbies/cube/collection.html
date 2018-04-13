@@ -9,26 +9,29 @@
     <title>Ben Walko's Website</title>
 </head>
 
-<body>
+<body class="animate-in">
+<script>
+    window.addEventListener("beforeunload", function () {
+        document.body.classList.add("animate-out");
+    });
+</script>
 <div id="page">
-    
-    <header>
+
+    <header class="head">
         <a class="logo" title="Ben Walko" href="../../../index.html"><span>Ben Walko</span></a>
-        <h1 class="name">My Collection</h1>
     </header>
-    
-    <section class="main">
-    
-    </section>
-    
+
     <section class="atmosphere">
-    
+        <div>
+            <h2 style="text-align: center">My Current Collection</h2>
+            <img class="ben" src="../../../images/collection.jpg">
+            <p>Top Row (Left to Right): Micro 3x3, Stickerless Skewb, Speed 2x2, Custom 3x3, Stickerless 3x3, White 4x4,
+                Stickerless Pastel 5x5, Ghost Cube <br/> Bottom Row (Left to Right): Rubik's 2x2, Pyramid, Broken 3x3,
+                Rubik's 4x4, Speed 3x3, Megaminx, Rubik's 3x3</p>
+            <p>Not every cube I own is shown here, but a good majority of them are represented.</p>
+        </div>
     </section>
-    
-    <section class="how-to">
-    
-    </section>
-    
+
     <nav>
         <ul>
             <li>
@@ -42,7 +45,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Interests &amp; Hobbies" href="#" aria-haspopup="true">Interests &amp; Hobbies</a>
                 <ul>
@@ -79,7 +82,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Accomplishments" href="#" aria-haspopup="true">Accomplishments</a>
                 <ul>
@@ -106,7 +109,7 @@
             </li>
         </ul>
     </nav>
-    
+
     <footer>
         &copy; Benjamin Walko
         <div class="content">

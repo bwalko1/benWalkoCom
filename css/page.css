@@ -1,21 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Mina:400,700');
 
 body {
+    max-width: 1200px;
+    position: relative;
     font-family: 'Mina', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #555;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background: #010014 url(../images/code-wallpaper-4.png) no-repeat center top;
 }
 
-#page {
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
 }
 
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 /* Text */
 
 h1 {
@@ -84,11 +100,12 @@ header a.logo {
     z-index: 1;
     position: absolute;
     display: block;
-    width: 120px;
-    height: 120px;
-    background: url(../images/BW-Logo.png) no-repeat 0 0;
+    width: 175px;
+    height: 175px;
+    background: url(../images/BW-Logo.png) no-repeat 0 -30px;
     background-size: contain;
-    left: 40px;
+    left: 60px;
+    padding: 0 0 20px 0;
 }
 
 header a.logo span {
@@ -107,7 +124,7 @@ header h1.name {
 header div.hero {
     position: absolute;
     width: 50%;
-    top: 200px;
+    top: 180px;
     left: 24.5%;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -169,15 +186,15 @@ section.main aside p {
 }
 
 section.main aside .content.doing {
-    background-image: url(../images/BW-Logo-Favicon.png);
+    background-image: url(../images/rubiks.png);
 }
 
 section.main aside .content.thinking {
-    background-image: url(../images/BW-Logo-Favicon.png);
+    background-image: url(../images/league_icon.png);
 }
 
 section.main aside .content.what {
-    background-image: url(../images/BW-Logo-Favicon.png);
+    background-image: url(../images/eagle_icon.png);
 }
 
 /* Section - Video */
@@ -203,6 +220,27 @@ section.atmosphere {
     color: #000000;
 }
 
+section.list {
+    background-color: #12d484;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #000000;
+}
+
+section.list h1{
+    text-align: center;
+}
+
+section.list ul li {
+    margin:0;
+    padding:0 0 0 15px;
+}
+
+section.list .column{
+    float: left;
+    margin: 0 13%;
+}
+
 section.atmosphere.body {
     background-color: #12d484;
     padding-top: 30px;
@@ -211,15 +249,64 @@ section.atmosphere.body {
 }
 
 section.atmosphere article {
-    padding: 0 20px 0 515px;
-    background: url(../images/coding2.jpg) no-repeat 0 5px;
-    min-height: 220px;
+    padding: 0 20px 0 400px;
+    background: url(../images/mri_small.jpg) no-repeat 35px 5px;
+    min-height: 300px;
 }
 
-section.atmosphere article .body.left.ben {
-    padding: 0 20px 0 515px;
-    background: url(../images/ben2.jpg) no-repeat 0 5px;
-    min-height: 220px;
+section.atmosphere img.ben {
+    padding: 0 0 0 25%;
+    height: auto;
+    width: 50%;
+    position: relative;
+}
+
+section.atmosphere img.mri {
+    padding: 20px 30px 20px 0;
+    float: left;
+    height: auto;
+    width: 20%;
+    position: relative;
+}
+
+section.atmosphere img.rubiks {
+    padding: 10px 0 0 30px;
+    float: right;
+    height: auto;
+    width: 20%;
+    position: relative;
+}
+
+section.atmosphere img.eagle {
+    padding: 10px 0 0 30px;
+    float: right;
+    height: auto;
+    width: 15%;
+    position: relative;
+}
+
+section.atmosphere img.eagle_required {
+    padding: 20px 30px 20px 0;
+    float: left;
+    height: auto;
+    width: 30%;
+    position: relative;
+}
+
+section.atmosphere img.eagle_badges {
+    padding: 10px 0 0 30px;
+    float: right;
+    height: auto;
+    width: 30%;
+    position: relative;
+}
+
+section.atmosphere img.trap {
+    padding: 20px 30px 20px 0;
+    float: left;
+    height: auto;
+    width: 30%;
+    position: relative;
 }
 
 /* Section - How To */
@@ -377,7 +464,7 @@ nav ul ul ul {
 /* top-level */
 
 nav > ul {
-    padding-left: 200px;
+    padding-left: 25%;
 }
 
 nav > ul > li {

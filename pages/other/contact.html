@@ -9,35 +9,42 @@
     <title>Ben Walko's Website</title>
 </head>
 
-<body>
+<body class="animate-in">
+<script>
+    window.addEventListener("beforeunload", function () {
+        document.body.classList.add("animate-out");
+    });
+</script>
 <div id="page">
-    
+
     <header class="head">
         <a class="logo" title="Ben Walko" href="../../index.html"><span>Ben Walko</span></a>
-        <h1 class="name">Contact</h1>
     </header>
-    
-    <section class="atmosphere">
+
+    <section class="list">
+        <h2 style="text-align: center">(Contact form currently does not work, please email me at bwalko1@kent.edu)</h2>
+
+        <h1>Contact Me</h1>
         <link type="text/css" rel="stylesheet" href="../../css/contact.css">
         <section class="body">
-            
+
             <form action="../../php/form.php" method="post" enctype="multipart/form-data">
                 <label></label>
                 <input name="name" required="required" placeholder="Your Name">
-                
+
                 <label></label>
                 <input name="email" type="email" required="required" placeholder="Your Email">
-                
+
                 <label></label>
                 <textarea name="message" cols="20" rows="5" required="required" placeholder="Message"></textarea>
-    
+
                 <input id="submit" name="submit" type="reset" value="Submit">
                 <input id="cancel" name="cancel" type="reset" value="Cancel"/>
             </form>
-            
+
         </section>
     </section>
-    
+
     <nav>
         <ul>
             <li>
@@ -51,7 +58,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Interests &amp; Hobbies" href="#" aria-haspopup="true">Interests &amp; Hobbies</a>
                 <ul>
@@ -87,7 +94,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Accomplishments" href="#" aria-haspopup="true">Accomplishments</a>
                 <ul>
@@ -112,7 +119,7 @@
             </li>
         </ul>
     </nav>
-    
+
     <footer>
         &copy; Benjamin Walko
         <div class="content">

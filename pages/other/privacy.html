@@ -9,26 +9,27 @@
     <title>Ben Walko's Website</title>
 </head>
 
-<body>
+<body class="animate-in">
+<script>
+    window.addEventListener("beforeunload", function () {
+        document.body.classList.add("animate-out");
+    });
+</script>
 <div id="page">
-    
-    <header>
+
+    <header class="head">
         <a class="logo" title="Ben Walko" href="../../index.html"><span>Ben Walko</span></a>
-        <h1 class="name">Privacy</h1>
     </header>
-    
-    <section class="main">
-    
+
+    <section class="list">
+        <div>
+            <h1>Privacy Policy</h1>
+            <div style="text-align: center;">I do not collect any information from any user who visits my site, although
+                my site is deployed through github.io which may collect and retain user data.
+            </div>
+        </div>
     </section>
-    
-    <section class="atmosphere">
-    
-    </section>
-    
-    <section class="how-to">
-    
-    </section>
-    
+
     <nav>
         <ul>
             <li>
@@ -42,7 +43,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Interests &amp; Hobbies" href="#" aria-haspopup="true">Interests &amp; Hobbies</a>
                 <ul>
@@ -78,7 +79,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Accomplishments" href="#" aria-haspopup="true">Accomplishments</a>
                 <ul>
@@ -103,7 +104,7 @@
             </li>
         </ul>
     </nav>
-    
+
     <footer>
         &copy; Benjamin Walko
         <div class="content">

@@ -9,26 +9,32 @@
     <title>Ben Walko's Website</title>
 </head>
 
-<body>
+<body class="animate-in">
+<script>
+    window.addEventListener("beforeunload", function () {
+        document.body.classList.add("animate-out");
+    });
+</script>
 <div id="page">
-    
-    <header>
+
+    <header class="head">
         <a class="logo" title="Ben Walko" href="../../../index.html"><span>Ben Walko</span></a>
-        <h1 class="name">Cube Overview</h1>
     </header>
-    
-    <section class="main">
-    
-    </section>
-    
+
     <section class="atmosphere">
-    
+        <div>
+            <img class="eagle_required" src="../../../images/erno-rubik.jpg">
+            <h2>History of the Cube</h2>
+            <p>Rubik's Cube is a 3-D combination puzzle invented in 1974 by Hungarian sculptor and professor of
+                architecture Ernő Rubik. Originally called the Magic Cube, the puzzle was licensed by Rubik to be
+                sold by Ideal Toy Corp. in 1980 via businessman Tibor Laczi and Seven Towns founder Tom Kremer,
+                and won the German Game of the Year special award for Best Puzzle that year. As of January 2009, 350
+                million cubes had been sold worldwide making it the world's top-selling puzzle game. It is
+                widely considered to be the world's best-selling toy.</p>
+            <p>Ernő Rubik pictured.</p>
+        </div>
     </section>
-    
-    <section class="how-to">
-    
-    </section>
-    
+
     <nav>
         <ul>
             <li>
@@ -42,7 +48,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Interests &amp; Hobbies" href="#" aria-haspopup="true">Interests &amp; Hobbies</a>
                 <ul>
@@ -79,7 +85,7 @@
                     </li>
                 </ul>
             </li>
-            
+
             <li>
                 <a title="Accomplishments" href="#" aria-haspopup="true">Accomplishments</a>
                 <ul>
@@ -106,7 +112,7 @@
             </li>
         </ul>
     </nav>
-    
+
     <footer>
         &copy; Benjamin Walko
         <div class="content">
